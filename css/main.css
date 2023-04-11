@@ -1,0 +1,163 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header{
+    color: #EAF2EF;
+    background: #2E3238;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden{
+     display: none;
+}
+
+.visible{
+    display: block;
+}
+#info{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    background: #FBDC9D;
+    max-height: 85vh;
+    overflow: auto;
+    right: 0px;
+    z-index: 10;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+#kaupunki{
+    text-align: center;
+}
+#lampo{
+    margin-left: 30px;
+}
+#desc{
+    margin-left: 30px;
+}
+#tuntuu{
+    margin-left: 30px;
+}
+#img{
+    max-width: 40%;
+    position: absolute;
+    right: 5px;
+    top: 30px;
+    align-content: end;
+}
+#nappi{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    z-index: 500;
+}
+#avaa{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    z-index: 500;
+}
+#matkatietoja{
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    z-index: 500;
+}
+#piilota{
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    z-index: 500;
+}
+ul{
+    position: relative;
+    list-style: none;
+}
+li img{
+    position: absolute;
+    right: 5px;
+    vertical-align: top;
+}
+li{
+    line-height: 0.3em;
+    margin-bottom: 2em;
+}
+/*Modal setup is taken from W3School*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 400;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    z-index: 501;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    #info{
+        width: 100%;
+        height: 33%;
+        bottom: 0px;
+
+    }
+    .mapBigOpen{
+        width: 100% !important;
+        height: 67%
+    }
+    button{
+        padding: 6px;
+        top: 75px !important;
+    }
+    .modal-content{
+        margin-top: 25%;
+    }
+    #content img {
+        max-width: 100%;
+    }
+}
+#valikko{
+    position: absolute;
+    top: 80px;
+    left: 8px;
+}
+#valikko a{
+    color: #fefefe;
+    margin: 10px;
+}
+.mapBig{
+    width: 99.2%;
+    height: 85vh;
+    position: absolute;
+    z-index: 9;
+}
+.mapBigOpen{
+    width: 70%;
+    height: 85vh;
+    position: absolute;
+    z-index: 9;
+}

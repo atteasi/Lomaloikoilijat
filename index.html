@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lomaloikoilijat</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Lomaloikoilijat</h1>
+    <nav id="valikko">
+        <a href="#" id="ohje">Käyttöohje</a>
+        <a href="#" id="kuvia">Mainoskuvia</a>
+    </nav>
+    <button id="avaa" type="button" class="hidden">Avaa Sivuvalikko</button>
+    <button id="nappi" type="button" class="hidden">Piilota Sivuvalikko</button>
+    <button id="matkatietoja" type="button" class="hidden">Näytä reitti kohteeseen</button>
+    <button id="piilota" type="button" class="hidden">Piilota reitti</button>
+</header>
+<main>
+    <div id="map" class="mapBig"></div>
+    <article class="hidden" id="info">
+        <h2 id="kaupunki"></h2>
+        <p id="lampo"></p>
+        <p id="tuntuu"></p>
+        <p id="desc"></p>
+        <img id="img" src="" alt="icon">
+        <p><br></p>
+        <ul id="lista"></ul>
+    </article>
+    <div id="modal" class="modal">
+        <article class="modal-content" id="content">
+        </article>
+    </div>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+<script src="js/main.js"></script>
+<script src="js/weather_data.js"></script>
+<script src="js/airport_data.js"></script>
+
+
+</body>
+</html>
